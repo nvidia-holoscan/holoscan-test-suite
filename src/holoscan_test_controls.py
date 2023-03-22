@@ -72,9 +72,9 @@ class HoloscanTestControls:
         self.checkbox_command(
             control_name="recorded_endoscopy_demo",
             label="Run the tool tracking demo (with recorded input)",
-            command="./apps/endoscopy_tool_tracking/cpp/endoscopy_tool_tracking",
+            command="./applications/endoscopy_tool_tracking/cpp/endoscopy_tool_tracking",
             env_update={"DISPLAY": ":0"},
-            cwd="/workspace",
+            cwd="/opt/nvidia/holohub",
         )
         # Control: run iperf3, the server that supports network performance testing
         self.checkbox_command(
